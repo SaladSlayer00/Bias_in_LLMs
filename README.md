@@ -13,7 +13,7 @@ At their core, LLMs are sophisticated AI systems designed to comprehend, process
 ## Methodology
 
 To query the LLMs and evaluate biased responses, we utilized two renowned datasets: StereoSet and CrowS-Pairs, widely recognized benchmarks for detecting bias in language models. Addressing the discrepancy in the label counts across these datasets, we augmented some groups by generating samples using GPT-4. Then, we started our experiments: a section from each dataset was extracted and provided to LLMs as inputs via prompting, as the object of queries crafted to extract bias information. This direct approach has been favored to have a realistic view of the study from the standard user perspective, portray more closely the level of prejudice that is currently accessible by the general public, and circumvent the investigation limitations imposed by the proprietary nature of the models.
-Datasets were preprocessed according to the ![following pipeline: ](images/stereo-prep.png)
+![Dataset Processing: ](images/stereo-prep.png)
 
 Upon collecting responses from the LLMs under investigation, a comprehensive analysis was carried out utilizing the specifically formulated Bias Balance Inspection (BBI) method, details of which will be elaborated in the upcoming section. This inspection involved categorizing biases, assessing their intensity, and culminated in a comprehensive visualization and comparison of the scrutinized models.
 
